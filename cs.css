@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    min-height: 104vh;
+    position: relative;
+    margin: 0;
+    display:flex;
+    background-image: url(https://master2000.net/recursos/fotos/78/43887prado2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    background-position: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding-bottom: 2.9em
+}
+
+p{
+    text-wrap: pretty;
+}
+
+html{
+    height: 100%;
+}
+
+
+.wrapperimg{
+    display: flex;
+
+}
+.imgp{
+    position: absolute;
+    display: flex;
+    width: 120px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px gray;
+    transition: all .6s ease;
+}
+.imgp:hover{
+    transform: translateY(-3%);
+
+}
+
+.ig-link{
+    text-decoration: none;
+}
+
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    max-width: 1075px;
+    margin: auto;
+    height: auto;
+    margin-top: 5px;
+    border-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: darkgreen;
+    box-shadow: 0 1px 10px #2d2d2df8;
+
+
+}
+.imgp{
+    height: 150px;
+    width: 200px;
+    position: relative;
+    position: center;
+    display: inline;
+    margin: 5px;
+    left: 0px;
+}
+
+
+.lista{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    transition: all .6s ease;
+}
+
+.lista li a {
+    display: block;
+    padding: 10px 10px;
+    color: wheat;
+    text-decoration: none;
+    transition: all .6s ease, transform;
+}
+
+.lista li:hover{
+    background-color: rgba(0, 0, 0, .8
+    );
+    border-radius: 15px;
+    transform: translateY(-3%);
+
+}
+
+.lista-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: auto;
+    background-color: rgba(3, 118, 3, 0.9);
+    border-radius: 25px;
+    transition: 1s ease;
+    color: #000;
+
+}
+
+.lista li:hover .lista-vertical{
+    display: block;
+    transition: all .6s ease;
+    color: #000;
+    border-radius: 15px;
+}
+
+
+
+.contenidoPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 30px;
+    max-width: 1075px;
+    background-color: aliceblue;
+    padding-top: 30px;
+    border-radius: 25px;
+
+}
+.contenidoPrincipal header{
+    width: 100%;
+}
+.contenidoPrincipal aside{
+    display: flex;
+    position: relative;
+    right: 3%;
+    background-color: #fff;
+}
+.enlaceColegio{
+    width: 200px;
+    height: 645px;
+    position: relative;
+    background-image: url(https://master2000.net/recursos/noticias/78/37889WhatsApp%20Image%202024-10-01%20at%2011.24.53%20AM.jpg);
+    background-size:cover;
+    background-position: center;
+    background-color: #000;
+
+}
+main{
+    padding: 10px 50px;
+    height: 660px;
+    width: auto;
+    overflow-y: auto;
+    text-align: left;
+}
+.imgEnlace{
+    width: 130px;
+    height: 130px;
+    border-radius: 7PX;
+    position: relative;
+    margin-top: 200px;
+    margin-left: 45px;
+    border-radius: 10px;
+    box-shadow: 0 0 500px 20px rgb(14, 143, 51);
+    
+}
+footer{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 100px;
+    background-color: #2d2d2d;
+}
+
+h1,h2 {
+    color: darkgreen;
+    text-align: center;
+    margin: 25px 0;
+}
+.folletos{
+    position: relative;
+    height: 300px;
+    max-width: 350px;
+    display: block;
+    max-width: 500px;
+    left: 25%;
+    margin: 30px 0;
+    border-radius: 20px;
+    box-shadow: 0 2px 15px #00000063;
+}
+
+.footer {
+    position: absolute;
+    width: 101%;
+    height: auto;
+    background: darkgreen;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+  .icon-elem {
+    list-style: none;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    margin: 10px 10px;
+    transition: 0.5s;
+  }
+  
+  .icon:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    margin: 15px 0;
+    flex-wrap: wrap;
+  }
+  
+  .menu-elem {
+    list-style: none;
+  }
+
+  .cosme-img{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height: 200px;
+    left: 40%;
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(128, 128, 128, 0.322);
+    transition: all .3s ease;
+  }
+
+  .cosme-img:hover{
+    transform: translateY(-3%);
+
+  }
+  .menu-icon {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+    margin-top: 25px;  }
+  
+  .menu-icon:hover {
+    opacity: 1;
+  }
+  .fadi{
+    font-size: 15px;
+  }
+
+.videos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Zarco_despecho img{
+    display: flex;
+    width: 250px;
+    height: 300px;
+    margin: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #00000083;
+
+}
+
+.videos video{
+    width: 250px;
+    margin: 40px 20px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px #00000083;
+}
+.ENTRENAMIENTOFISICO{
+    position: relative;
+    left: 165px;
+    width: 300px;
+    height: 450px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.contenedorfisico{
+    position: relative;
+    bottom: 410px;
+    width: 30px;
+    height: 40px;
+}
+.instagramF{
+    text-decoration: none;
+}
+
+
+.baile img{
+    display: flex;
+    width: 250px;
+    height: 300px;
+    margin: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #00000083;
+    position: relative;
+    left: 330px;
+    
+
+}
+
+
+
+.text {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+@media screen and (max-width:420px){
+    html{
+        height: 100%;
+    }
+    body{
+    overflow: none;
+    }
+    .enlaceColegio{ 
+        width: 0px;
+        height: 0px;
+        position: relative;
+        background-image: url(https://master2000.net/recursos/noticias/78/37889WhatsApp%20Image%202024-10-01%20at%2011.24.53%20AM.jpg);
+        background-size:cover;
+        background-position: center;
+        background-color: #000;
+    
+    }
+    nav {
+        position: fixed;
+        display: flex;
+        margin: 1;
+        width: 100%;
+        max-width: 450px;
+        background-color: darkgreen;
+        justify-content: space-around;
+        left: -10px;
+        height: auto;
+    }
+    .contenidoPrincipal{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        max-width: 450px;
+        padding: 0 5px;
+        margin-top: 50px;
+        padding: 0 25px;
+        left: 0;
+    }
+    
+
+    .lista{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .lista li a {
+        display: block;
+        padding: 10px 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    
+    .lista li:hover{
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 15px;
+    
+    }
+    
+    .lista-vertical{
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 200px;
+        background-color: rgba(0, 0, 0, .9);
+        border-radius: 15px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        z-index: 12;
+    
+    }
+    
+    .lista li:hover .lista-vertical{
+        display: none;
+        position: fixed;
+        z-index: 12;
+    
+    }
+    .imgEnlace{
+        width: 60px;
+        height: 60px;
+        border-radius: 7PX;
+        position: fixed;
+        margin-top: 0px;
+        margin-left: -55px;
+        border-radius: 100%;
+        box-shadow: 0 0 500px 20px rgb(14, 143, 51);
+        
+    }
+    main{
+        height: auto;
+        max-width: 800px;
+        overflow-y:none;
+        
+    }
+
+    
+.baile img{
+    display: flex;
+    width: 250px;
+    height: 300px;
+    margin: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #00000083;
+    position: relative;
+    left: 10px;
+    
+
+}
+
+
+    .folletos{
+        display: flex;
+        width: 300px;
+        height: 300px;
+        margin: 40px 2px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px #00000083;
+        position: relative;
+        left: 0;
+        
+    }
+    footer{
+        margin-bottom: 0;
+    }
+    h1{
+        font-size: 30px;
+    }
+
+    .ENTRENAMIENTOFISICO{
+        position: relative;
+        display: flex;
+        left: 12px;
+        width: 250px;
+        height: 350px;
+        padding: 10px 0px;
+        margin-top: 25px;
+    }
+
+
+    .contenedorfisico{
+        position: relative;
+        padding: 20px;
+        margin: 85px 0;
+        bottom: 40px;
+        left: -20px;
+    
+    }
+
+    .footer{
+        padding: 5px 20px;
+        align-items: first center;
+        justify-content: center;
+        right: 10px;
+        width: 105%;
+    }
+    .Zarco_despecho img{
+        display: block;
+        width: 180px;
+        height: 300px;
+        margin: 40px 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px #00000083;
+    
+    }
+    
+    .videos video{
+        width: 180px;
+        margin: 40px 0;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px #00000083;
+    }
+}
